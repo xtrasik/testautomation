@@ -13,7 +13,7 @@ public class JunitTest {
 
         String stringtestowy = "firstTest";
        // assertTrue ( true) ;
-        assertTrue(stringtestowy, false);
+        assertTrue(stringtestowy.equalsIgnoreCase("firstTest"));
 
     }
 
