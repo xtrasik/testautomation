@@ -21,3 +21,11 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/qatestautomation/qatestautomation.iml
+/testautomation.iml
+qatestautomation/target/classes/
+qatestautomation/target/generated-test-sources/
+qatestautomation/target/maven-status/
+qatestautomation/target/site/
+qatestautomation/target/surefire-reports/
+/.idea/
