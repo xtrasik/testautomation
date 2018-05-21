@@ -10,7 +10,11 @@ public class JunitTest {
 
     @Test
     public void firstTest(){
-        assertTrue ( true) ;
+
+        String stringtestowy = "firstTest";
+       // assertTrue ( true) ;
+        assertTrue(stringtestowy, false);
+
     }
 
     @Test
