@@ -19,6 +19,16 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
+
+    <profiles>
+        <profile>
+            <id>allTest</id>
+            <properties>
+                <tests>All</tests>
+            </properties>
+        </profile>
+    </profiles>
+
     <build>
         <plugins>
 
@@ -61,6 +71,9 @@
                     <includes>
                         <include>**/*Test.java</include>
                     </includes>
+                    <properties>
+                        <includeTags>$(tests)</includeTags>
+                    </properties>
                 </configuration>
             </plugin>
         </plugins>

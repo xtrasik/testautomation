@@ -32,9 +32,11 @@ public class JupiterTest extends ConfigJunit {
         System.out.println("***************After*****************\n");
     }
 
-
+    @Tag("Repeated")
+    @Tag("All")
     @Test
     @DisplayName("Test Asercji - Junit5")
+    @RepeatedTest(2)
     public void dJupiterJunitAssertTest() {
 
         System.out.println("***************Junit5 Jupiter API*****************\n");
@@ -62,6 +64,7 @@ public class JupiterTest extends ConfigJunit {
     @Nested
     @DisplayName("Nested Jupiter Test Class")
     public class NestedJupiterClass {
+        @Tag("All")
         @Test
         @DisplayName("Nested Test Asercji - Junit5")
         public void eJupiterJunitListAssertTest() {
@@ -85,6 +88,7 @@ public class JupiterTest extends ConfigJunit {
 
         }
 
+        @Tag("All")
         @Test
         @DisplayName("Nested Test RegExpow - Junit5")
         public void fJupiterJunitRegExpAssertTest() {
@@ -94,7 +98,7 @@ public class JupiterTest extends ConfigJunit {
         }
     }
 
-
+    @Tag("All")
     @Test
     @DisplayName("Root Test RegExpow - Junit5")
     public void gJupiterJunitRegExpAssertTest() {
