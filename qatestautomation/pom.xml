@@ -33,7 +33,7 @@
                 </configuration>
             </plugin>
 
-            <!--Plugin do mavena aby w uruchamiał wszystkie testy które mają w nazwie klasy końcówkę Test oraz RunTests
+            <!--Plugin do mavena aby uruchamiał wszystkie testy które mają w nazwie klasy końcówkę Test oraz RunTests
             dzięki czemu uruchamiane będą również testy zarządzane przez cucumbera-->
 
             <plugin>
@@ -71,8 +71,6 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 

@@ -9,7 +9,6 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging> <!--budowanie pakietow przez poma nie przez jara-->
 
-
     <modules>
         <module>qatestautomation</module>
     </modules>
