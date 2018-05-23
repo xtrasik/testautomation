@@ -1,5 +1,6 @@
-package pages;
+package com.jsystems.frontend.pages;
 
+import com.jsystems.frontend.TestDataHelper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,7 +15,7 @@ public class MainPage {
     WebDriver driver;
 
     @FindBy(id = "navbar-login-link")
-    WebElement loginButton;
+    public WebElement loginButton;
 
     @FindBy(id = "hero-cta")
     WebElement getStartedButton;
@@ -40,7 +41,7 @@ public class MainPage {
         assertTrue(seePlanButton.isDisplayed());
 
         assertTrue(mainTextH1.isDisplayed());
-        assertTrue(mainTextH1.getText().equals("WordPress powers 30% of the internet."));
+        assertTrue(mainTextH1.getText().equals(TestDataHelper.wordPressMainText));
 
         assertTrue(checkLinkWebSites.isDisplayed());
         return true;

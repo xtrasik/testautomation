@@ -27,7 +27,7 @@
                 <!--<activeByDefault>true</activeByDefault>-->
             <!--</activation>-->
             <!--<properties>-->
-                <!--<tests>Repeated</tests>-->
+                <!--<com.jsystems.frontend.tests>Repeated</com.jsystems.frontend.tests>-->
             <!--</properties>-->
         <!--</profile>-->
     <!--</profiles>-->
