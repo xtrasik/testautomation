@@ -35,6 +35,7 @@ public class FrontendMainPageTest extends FrontendConfig {
         loginPage.emailFields.sendKeys(Configuration.WORDPRESS_EMAIL);
         loginPage.continueButton.click();
 
+        loginPage.waitForVisibilityOfElement(loginPage.submitButton, 15);
         loginPage.passwordFields.sendKeys(Configuration.WORDPRESS_PASSWORD);
         loginPage.submitButton.click();
 
