@@ -20,14 +20,17 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
-    <profiles>
-        <profile>
-            <id>allTest</id>
-            <properties>
-                <tests>All</tests>
-            </properties>
-        </profile>
-    </profiles>
+    <!--<profiles>-->
+        <!--<profile>-->
+            <!--<id>allTests</id>-->
+            <!--<activation>-->
+                <!--<activeByDefault>true</activeByDefault>-->
+            <!--</activation>-->
+            <!--<properties>-->
+                <!--<tests>Repeated</tests>-->
+            <!--</properties>-->
+        <!--</profile>-->
+    <!--</profiles>-->
 
     <build>
         <plugins>
@@ -71,9 +74,9 @@
                     <includes>
                         <include>**/*Test.java</include>
                     </includes>
-                    <properties>
-                        <includeTags>$(tests)</includeTags>
-                    </properties>
+                    <!--<properties>-->
+                        <!--<includeTags>All</includeTags>-->
+                    <!--</properties>-->
                 </configuration>
             </plugin>
         </plugins>
