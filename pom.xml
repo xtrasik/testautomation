@@ -10,6 +10,7 @@
     <packaging>pom</packaging> <!--budowanie pakietow przez poma nie przez jara-->
 
     <modules>
+        <module>qafrontendtest</module>
         <module>qatestautomation</module>
     </modules>
 
