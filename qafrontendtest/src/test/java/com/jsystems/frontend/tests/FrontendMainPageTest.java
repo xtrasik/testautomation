@@ -17,7 +17,7 @@ public class FrontendMainPageTest extends FrontendConfig {
     WebDriverWait wait;
 
     @Test
-    @DisplayName("Check content main page")
+    @DisplayName("Check content main pages")
     public void contentMainPageTest(){
         driver.get("https://wordpress.com/");
         mainPage = new MainPage(driver);
