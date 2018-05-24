@@ -24,6 +24,9 @@ hs_err_pid*
 /testautomation.iml
 /.idea/
 /qatestautomation/target/
-/qatestautomation/qatestautomation.iml
 /qafrontendtest/target/
+/qaapi/target/
 
+/qatestautomation/qatestautomation.iml
+/qaapi/qaapi.iml
+/qafrontendtest/qafrontendtest.iml
