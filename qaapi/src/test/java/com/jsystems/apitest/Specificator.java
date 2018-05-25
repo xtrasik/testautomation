@@ -14,6 +14,11 @@ public class Specificator {
             .setBasePath("v2")
             .build();
 
+    public static RequestSpecification requestSpecificationFakeApi = new RequestSpecBuilder()
+            .setContentType(ContentType.JSON)
+            .setBaseUri("https://fakerestapi.azurewebsites.net/")
+            .build();
+
     @BeforeEach
     public void before() {
         System.out.println("================== @BeforeClass RestTest JUpiter =====================");

@@ -3,6 +3,7 @@ package com.jsystems.apitest;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.jsystems.apitest.models.Book;
 import com.jsystems.apitest.models.MyObj;
 import com.jsystems.apitest.models.TestUserGeneric;
 import com.jsystems.apitest.models.User;
@@ -204,6 +205,23 @@ public class ApiTest extends Specificator {
                 .then()
                 .assertThat()
                 .body(matchesJsonSchemaInClasspath("Validator.json"));
+    }
+
+    @Test
+    @DisplayName("10 - Test GET: /api/Books z parametrem")
+    public void j_apiTenthTest() {
+        String link = "api/Books/{id}";
+        Response response = new TestResponse().getResponseFakeRestApiBook(requestSpecificationFakeApi, link, 1);
+
+        Book books = response
+                .then()
+                .extract()
+                .body()
+                .as(Book.class);
+
+        System.out.println(response.getBody().prettyPeek());
+        System.out.println(books.publishDate);
+        assertTrue(books.id == 1);
     }
 
 }
