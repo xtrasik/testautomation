@@ -23,8 +23,5 @@ public class Specificator {
     public static void setUp() {
         System.out.println("================== @BeforeAll RestTest JUpiter =====================");
 
-//        RestAssured.baseURI = TestData.baseUri;
-//        RestAssured.basePath = "/v2";
-
     }
 }
